@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="msg-container hide">
-        <p id="msg">Winner</p>
-        <button id="new-btn">New game</button>
-    </div>
-    <main>
-        <h1>Tic-Tac-Toe</h1>
-        <div class="container">
-            <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-            </div>
+    <h1>Rock Paper Scissor</h1>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="./images/rock.png"/>
         </div>
-        <button id="reset-game">Reset-game</button>
-    </main>
-<script src="script.js"></script>
-    
+        <div class="choice" id="paper">
+            <img src="./images/paper.png"/>
+        </div>
+        <div class="choice" id="Scissor">
+            <img src="./images/scissors.png"/>
+        </div>
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
